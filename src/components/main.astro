@@ -1,0 +1,26 @@
+---
+import '/src/styles.css';
+import SEO from '/src/components/seo.astro';
+import Footer from '/src/components/footer.astro';
+const { title, description } = Astro.props;
+
+const slotContent = await Astro.slots.render('default');
+const hasContent = !!slotContent?.trim();
+---
+
+<html lang="en">
+<!-- 
+    GET YOUR OWN ARTISAN HTML @ 
+      ✨ CHEAP.URLS.LOAN ✨
+"MORE CONVENIENT THAN A NEW HOBBY" 
+-->
+	<head>
+		<SEO title={title ? "Bloomington Homes for All: " + title : "Bloomington Homes for All"} description={description ? description : "Bloomington Homes for All is a community organization fighting to preserve affordable housing. Currently, we are fighting to save 29 units of downtown, county-owned housing slated for demolition."} />
+	</head>
+	<body>
+      <main>
+        <slot />
+      </main>
+<!--       <Footer /> -->
+	</body>
+</html>

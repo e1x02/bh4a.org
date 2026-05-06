@@ -1,0 +1,47 @@
+@font-face { 
+font-family: "Mona Sans Condensed"; 
+font-style: italic; 
+font-weight: bold; 
+src: url("/MonaSansCondensed-BlackItalic.woff") format("woff"); 
+}
+@font-face { 
+font-family: "Mona Sans Condensed"; 
+font-style: normal; 
+font-weight: bold; 
+src: url("/MonaSansCondensed-Black.woff") format("woff"); 
+}
+@font-face { 
+font-family: "MonaspaceXenon"; 
+font-style: normal; 
+font-weight: normal; 
+src: url("/MonaspaceXenon-SemiBold.woff") format("woff"); 
+}
+
+body{
+color: rgba(255, 255, 255, 0.9);
+background-color: #1308C3;
+background-image: url("/grain.png");
+background-size: 64px 64px;
+font-family: "MonaspaceXenon";
+font-family: "Arial";
+font-size: min(max(3vw,1rem), 1.5rem);
+max-width: 1400px;
+margin-right: auto;
+margin-left: auto;
+}
+main{
+margin: 3vw;
+}
+p{
+padding:0 0.25em;
+}
+a:link,a:visited{color: rgba(255, 255, 255, 0.9);}
+a:active{color: rgba(255, 255, 255, 0.7)}
+h1,h2,h3{
+margin:0;
+font-family: "Mona Sans Condensed";
+font-size: min(max(16vw,2rem), 10rem);
+text-transform: uppercase;
+line-height: 80%;
+letter-spacing: -2%
+}
