@@ -9,7 +9,6 @@ export default defineConfig({
       enabled: false
     },
   
-  site: 'https://e1x02.github.io',
-  base: '/bh4a.org',
+  site: 'https://bh4a.org',
   integrations: [sitemap({filter: (page) => !page.includes('/errors/'),})],
 });
