@@ -1,0 +1,13 @@
+---
+const { title, description } = Astro.props;
+---
+
+<header>
+<h1 set:html={title ? title : "Bloomington<br>Homes <em>for</em> All"}></h1>
+<menu>
+<!--   <li><a href="#about">About</a></li> -->
+  <li><a href="#save-seminary-pointe">Save Seminary</a></li>
+  <li><a href="#our-vision">Our Vision</a></li>
+  <li><a href="/donate" class="external">Donate</a></li>
+</menu>
+</header>

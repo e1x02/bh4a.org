@@ -22,10 +22,9 @@ color: rgba(255, 255, 255, 0.9);
 background-color: #1308C3;
 background-image: url("/grain.png");
 background-size: 64px 64px;
-font-family: "MonaspaceXenon";
 font-family: "Arial";
 font-size: min(max(3vw,1rem), 1.5rem);
-max-width: 1400px;
+max-width: 800px;
 margin-right: auto;
 margin-left: auto;
 }
@@ -38,10 +37,107 @@ padding:0 0.25em;
 a:link,a:visited{color: rgba(255, 255, 255, 0.9);}
 a:active{color: rgba(255, 255, 255, 0.7)}
 h1,h2,h3{
+font-family: "Mona Sans Condensed", Impact, "Arial Black", sans-serif;
+font-size: min(max(10vw,3rem), 10rem);
 margin:0;
-font-family: "Mona Sans Condensed";
-font-size: min(max(16vw,2rem), 10rem);
 text-transform: uppercase;
 line-height: 80%;
-letter-spacing: -2%
+letter-spacing: -2%;
+scroll-margin-top: 1rem;
+}
+h2{
+font-size: calc(min(max(10vw,3rem), 10rem) * 0.6);
+margin: 2rem 0;
+}
+h3{
+font-size: calc(min(max(10vw,3rem), 10rem) * 0.4);
+margin: 2rem 0;
+}
+ul{
+list-style:"\25CF\00A0";
+}
+
+header{
+margin: 3vw;
+/* 
+display: flex;
+flex-wrap: wrap-reverse;
+gap: 1em;
+justify-content: space-between;
+align-items: start;
+background-color: rgba(255, 255, 255, 0.9);
+color: #1308C3;
+padding: 0.5em 1em;
+border: white 2px solid;
+border-radius: 4em;
+ */
+}
+header menu{
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+margin: 1.5em 0;
+padding: 0;
+gap:2em 0.5em;
+}
+header menu li{
+display: inline;
+}
+header menu a, .button{
+font-weight: bold;
+text-align: middle;
+/* font-size: 90%; */
+text-transform: uppercase;
+padding: 0.5em 0.75em;
+border-radius: 5em;
+text-decoration: none;
+transition: background-color 0.6s;
+background-color: rgba(255, 255, 255, 0.3);
+}
+header menu a:hover, .button:hover{
+background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* 
+.external::after{
+content: "\00a0\2197";
+font-family: sans-serif;
+font-weight: bold;
+font-size: 80%;
+vertical-align: text-top;
+}
+ */
+
+.grid{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+gap: 1rem;
+}
+.story{
+flex-basis: 400px;
+flex-grow: 1;
+display: block;
+border: 2px solid white;
+border-radius: 1rem;
+padding: 0 0.5em;
+text-decoration: none;
+background-color: rgba(255, 255, 255, 0.05);
+}
+.story .title{
+/* font-family: serif; */
+text-transform: uppercase;
+margin-top: 0;
+}
+.story .info{
+display: flex;
+justify-content: space-between;
+font-family: sans-serif;
+text-transform: uppercase;
+font-size: 70%;
+}
+.story .publisher{
+font-style: italic;
+}
+.story .date{
 }
